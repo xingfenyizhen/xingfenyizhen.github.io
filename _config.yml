@@ -24,13 +24,13 @@ repository               : "xingfenyizhen/xingfenyizhen.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
+  name             : "Zhenyu Wang"
+  pronouns         : "he/him"
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Haidian,Beijing"
+  School           : "Beihang University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "SY2506226@buaa.edu.cn" 
 
   # Academic websites
   academia         : # URL
