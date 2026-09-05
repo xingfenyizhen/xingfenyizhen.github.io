@@ -17,10 +17,3 @@ tags: [分类]
 ```
 
 随后直接写 Markdown 正文。推送到 `main` 或 `master` 分支后，GitHub Pages 会自动构建。
-
-## 本地预览
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
