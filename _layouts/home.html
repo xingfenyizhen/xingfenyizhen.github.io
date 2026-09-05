@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="intro" aria-labelledby="intro-title">
+  <p class="eyebrow">PERSONAL NOTES / 个人札记</p>
+  <h1 id="intro-title">写下思考，<br><span>也记录生活。</span></h1>
+  <p class="intro-copy">关于代码、学习与日常的个人记录。保持好奇，慢慢更新。</p>
+</section>
+
+<section class="post-section" aria-labelledby="latest-posts">
+  <div class="section-heading">
+    <h2 id="latest-posts">最新文章</h2>
+    <a href="{{ '/archive/' | relative_url }}">查看归档 <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="post-card">
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+          {% if post.tags.first %}<span>{{ post.tags.first }}</span>{% endif %}
+        </div>
+        <div class="post-summary">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 110 }}</p>
+          <a class="read-more" href="{{ post.url | relative_url }}" aria-label="阅读《{{ post.title }}》">阅读全文 <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    {% else %}
+      <p class="empty-state">第一篇文章正在路上。</p>
+    {% endfor %}
+  </div>
+</section>
+

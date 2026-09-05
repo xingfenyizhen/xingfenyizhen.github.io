@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post-shell">
+  <header class="post-header">
+    <a class="back-link" href="{{ '/' | relative_url }}">← 返回首页</a>
+    <h1>{{ page.title }}</h1>
+    <div class="post-byline">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y 年 %m 月 %d 日" }}</time>
+      {% if page.tags.size > 0 %}
+        <span aria-hidden="true">·</span>
+        <span>{{ page.tags | join: " / " }}</span>
+      {% endif %}
+    </div>
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <footer class="post-end">
+    <span>END</span>
+    <a href="{{ '/archive/' | relative_url }}">继续浏览归档 →</a>
+  </footer>
+</article>
+
