@@ -2,24 +2,31 @@
 layout: default
 ---
 
-<article class="post-shell">
-  <header class="post-header">
-    <a class="back-link" href="{{ '/' | relative_url }}">← 返回首页</a>
+{% assign header_image = page.header_image | default: site.header_image %}
+<header class="hero hero-post{% unless page.header_image %} hero-textured{% endunless %}" style="background-image: linear-gradient(rgba(0,0,0,.48), rgba(0,0,0,.48)), url('{{ header_image | relative_url }}')">
+  <div class="hero-content post-heading">
+    {% if page.tags.size > 0 %}
+      <div class="hero-tags">
+        {% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}
+      </div>
+    {% endif %}
     <h1>{{ page.title }}</h1>
-    <div class="post-byline">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y 年 %m 月 %d 日" }}</time>
-      {% if page.tags.size > 0 %}
-        <span aria-hidden="true">·</span>
-        <span>{{ page.tags | join: " / " }}</span>
-      {% endif %}
-    </div>
-  </header>
-  <div class="prose">
-    {{ content }}
+    {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+    <p class="hero-meta">Posted by {{ page.author | default: site.author.name }} on {{ page.date | date: "%B %-d, %Y" }}</p>
   </div>
-  <footer class="post-end">
-    <span>END</span>
-    <a href="{{ '/archive/' | relative_url }}">继续浏览归档 →</a>
-  </footer>
-</article>
+</header>
 
+<article class="post-layout page-width">
+  <div class="prose post-prose">
+    {{ content }}
+
+    <nav class="post-pager" aria-label="文章导航">
+      {% if page.previous.url %}
+        <a class="previous" href="{{ page.previous.url | relative_url }}"><span>上一篇</span>{{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next" href="{{ page.next.url | relative_url }}"><span>下一篇</span>{{ page.next.title }}</a>
+      {% endif %}
+    </nav>
+  </div>
+</article>

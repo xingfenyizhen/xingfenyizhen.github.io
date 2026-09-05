@@ -1,9 +1,13 @@
 title: "Zhenyu's Blog"
 description: "关于代码、学习与日常的个人记录"
+tagline: "写下思考，也记录生活。"
 url: "https://xingfenyizhen.github.io"
 baseurl: ""
 lang: "zh-CN"
 timezone: "Asia/Shanghai"
+header_image: "/assets/img/home-hero.jpg"
+sidebar_description: "你好，我是 Zhenyu。这里记录代码、学习与日常，也收藏那些值得慢慢想明白的事。"
+github_username: "xingfenyizhen"
 
 author:
   name: "Zhenyu Wang"

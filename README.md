@@ -13,6 +13,8 @@ title: 文章标题
 date: 2026-09-05
 description: 一句话摘要
 tags: [分类]
+# 可选：为文章设置独立头图
+# header_image: /assets/img/your-cover.jpg
 ---
 ```
 

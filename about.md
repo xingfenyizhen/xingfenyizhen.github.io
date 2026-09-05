@@ -3,6 +3,7 @@ layout: page
 title: 关于
 permalink: /about/
 description: 关于这个博客和它的作者。
+header_image: /assets/img/about-hero.jpg
 ---
 你好，我是 **Zhenyu Wang**。
 
