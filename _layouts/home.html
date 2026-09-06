@@ -20,7 +20,6 @@ layout: default
           <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
         </a>
         <div class="post-meta">
-          <span>Posted by {{ post.author | default: site.author.name }}</span>
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
         </div>
       </article>
@@ -48,7 +47,7 @@ layout: default
 
     <section class="side-section">
       <h2>ABOUT THIS BLOG</h2>
-      <p>记录代码、学习和生活里值得反复回看的片段。</p>
+      <p>寻找第25号相片ing</p>
     </section>
   </aside>
 </div>

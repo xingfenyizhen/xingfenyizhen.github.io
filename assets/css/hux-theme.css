@@ -332,10 +332,6 @@ img {
   font-style: italic;
 }
 
-.post-meta span::after {
-  content: " on ";
-}
-
 .empty-state {
   color: var(--muted);
   font-style: italic;
