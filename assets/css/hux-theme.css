@@ -479,6 +479,17 @@ img {
   color: #222;
 }
 
+.article-figure {
+  margin: 2.5rem 0;
+}
+
+.article-figure img {
+  width: 100%;
+  display: block;
+  border-radius: .25rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .08);
+}
+
 .prose blockquote {
   padding: .2rem 0 .2rem 1.4rem;
   color: #777;
