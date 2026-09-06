@@ -1,6 +1,6 @@
 title: "Saul's Blog"
-description: "关于代码、学习与日常的个人记录"
-tagline: "写下思考，也记录生活。"
+description: "Just do it!"
+tagline: "萍水相逢，尽是他乡之客"
 url: "https://xingfenyizhen.github.io"
 baseurl: ""
 lang: "zh-CN"
@@ -9,8 +9,8 @@ header_image: "/assets/img/1.jpg"
 github_username: "xingfenyizhen"
 
 author:
-  name: "Zhenyu Wang"
-  email: "SY2506226@buaa.edu.cn"
+  name: "Zhengyu Wang"
+  email: "18986377619@163.com"
 
 permalink: /posts/:title/
 future: false
