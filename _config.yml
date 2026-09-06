@@ -6,7 +6,6 @@ baseurl: ""
 lang: "zh-CN"
 timezone: "Asia/Shanghai"
 header_image: "/assets/img/1.jpg"
-sidebar_description: "你好，我是 Zhenyu。这里记录代码、学习与日常，也收藏那些值得慢慢想明白的事。"
 github_username: "xingfenyizhen"
 
 author:
